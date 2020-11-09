@@ -1,0 +1,14 @@
+
+<div>
+
+  <input type="text" name="name1" id="name1" [(ngModel)]="name1">
+
+  <div>{{name1}}</div>
+
+
+  <hr />
+
+  <input (input)="onUpdateInputName2($event)" type="text" name="name2" id="name2">
+  <div>{{name2}}</div>
+
+</div>
