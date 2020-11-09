@@ -9,6 +9,6 @@
   <hr />
 
   <input (input)="onUpdateInputName2($event)" type="text" name="name2" id="name2">
-  <div>{{name2}}</div>
+  <div *ngIf="name2.length > 2">{{name2}}</div>
 
 </div>
