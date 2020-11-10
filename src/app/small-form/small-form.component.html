@@ -9,6 +9,9 @@
   <hr />
 
   <input (input)="onUpdateInputName2($event)" type="text" name="name2" id="name2">
-  <div *ngIf="name2.length > 2">{{name2}}</div>
+  <div *ngIf="name2.length > 2 ; else longerArea">{{name2}}</div>
+  <ng-template #longerArea>
+    marker template
+  </ng-template>
 
 </div>
