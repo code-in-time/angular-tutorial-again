@@ -1,0 +1,14 @@
+<p>seewhat-ilearned works!</p>
+
+<button type="button" (click)="onBtnClick()">Display Details</button>
+<p *ngIf="passwordToggle">
+  this is text
+</p>
+
+<ul>
+  <li *ngFor="let item of btnClickArray">
+    {{item}}
+  </li>
+</ul>
+
+{{passwordToggle}}

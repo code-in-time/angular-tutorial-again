@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AppServerComponent } from './app-server/app-server.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { SmallFormComponent } from './small-form/small-form.component';
+import { SeewhatIlearnedComponent } from './seewhat-ilearned/seewhat-ilearned.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppServerComponent,
     ListViewComponent,
-    SmallFormComponent
+    SmallFormComponent,
+    SeewhatIlearnedComponent
   ],
   imports: [
     BrowserModule,
