@@ -6,7 +6,10 @@
 </p>
 
 <ul>
-  <li *ngFor="let item of btnClickArray">
+  <li *ngFor="let item of btnClickArray; let i = index"
+      [ngStyle]="i > 5 ? {'background-color': 'blue'} : ''"
+      [ngClass]="i > 5 ? 'after5' : ''"
+      >
     {{item}}
   </li>
 </ul>
